@@ -1,0 +1,1 @@
+print("Program for Ordinal Encoding")
