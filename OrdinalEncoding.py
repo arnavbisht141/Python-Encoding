@@ -10,7 +10,7 @@ print(frame)
 print()
 
 uniqueV = []
-for value in data['Book']:
+for value in frame['Book']:
     if value not in uniqueV:
         uniqueV.append(value)
 #Now identified unique books and put them on a list
