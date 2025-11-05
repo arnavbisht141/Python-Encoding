@@ -17,10 +17,12 @@ valid_val = []
 for value in marks:
     if not np.isnan(value):
         valid_val.append(value)
-print('Valid values are' , valid_val , "\n")
+if (len(valid_val) > 0):
+    mean_value = sum(valid_val) / len(valid_val)
+    print('Valid values are' , valid_val , "\n")
 #Collected the existing values in the dataframe
-
-mean_value = sum(valid_val) / len(valid_val)
+else:
+    print("No data in marks")
 #Took mean for the imputation (doing mean value imputation)
 
 filled_values = []
